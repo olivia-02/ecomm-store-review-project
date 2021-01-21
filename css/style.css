@@ -1,1 +1,91 @@
 /* Note there a few "reset" styles given in reset.css. Review those before you begin */
+html {
+	--primary-col: #E1E1E1;
+	--primary-vari: #F5F5F5;
+	--secondary-col: #818772;
+	--secondary-vari: #9DA191;
+	--accent-col: #E0CE7A;
+	--text-icon-col: #5e4f35;
+	/*end colours*/
+	--pad-and-gap: 1em;
+}
+body{
+	/*global font*/
+	font-weight: 200;
+	font-family: 'Courier New', monospace;
+	color: var(--text-icon-col);
+	background-color: var(--primary-col);
+}
+.material-icons{
+	color: var(--text-icon-col)
+}
+button {
+	background-color: var(--secondary-col);
+	box-shadow: none;
+	border: none;
+}
+.page-header{
+	display: grid;
+	grid-template-columns: auto 1fr auto auto;
+	padding: 0px var(--pad-and-gap);
+}
+.page-footer {
+	padding: 0px var(--pad-and-gap);
+}
+.products{
+	padding: 0px var(--pad-and-gap);
+}
+.your-products {
+	padding-top: 8vh;
+	display: flex;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.pagination{
+	text-align: center;
+}
+.pages{
+	display: flex;
+	justify-content: center;
+}
+.pages > li {
+	margin: var(--pad-and-gap);
+}
+legend {
+	padding-top: var(--pad-and-gap);
+	font-weight: 300;
+	
+}
+.social, .legal {
+	display: flex;
+	justify-content: flex-end;
+	padding: 0px calc(var(--pad-and-gap) / 2)
+}
+.copyright {
+	text-align: right;
+}
+.logo {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+.logo>img {
+	height: 20vh;
+}
+.nav-toggle {
+	grid-column-start: 4;
+	grid-column-end: 5;
+}
+.search {
+	grid-row-start: 2;
+	grid-row-end: 3;
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
+.navigation {
+	grid-row-start: 3;
+	grid-row-end: 4;
+	grid-column-start: 1;
+	grid-column-end: 5;
+}
