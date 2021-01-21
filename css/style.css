@@ -28,6 +28,7 @@ button {
 	display: grid;
 	grid-template-columns: auto 1fr auto auto;
 	padding: 0px var(--pad-and-gap);
+	align-items: center;
 }
 .page-footer {
 	padding: 0px var(--pad-and-gap);
@@ -35,8 +36,13 @@ button {
 .products{
 	padding: 0px var(--pad-and-gap);
 }
+h2 {
+	margin-bottom: 0;
+}
+.product {
+	padding: 1em 0px;
+}
 .your-products {
-	padding-top: 8vh;
 	display: flex;
 	grid-column-start: 3;
 	grid-column-end: 4;
@@ -76,6 +82,7 @@ legend {
 .nav-toggle {
 	grid-column-start: 4;
 	grid-column-end: 5;
+	height: 2em;
 }
 .search {
 	grid-row-start: 2;
@@ -84,6 +91,7 @@ legend {
 	grid-column-end: 5;
 }
 .navigation {
+	display: none;
 	grid-row-start: 3;
 	grid-row-end: 4;
 	grid-column-start: 1;
