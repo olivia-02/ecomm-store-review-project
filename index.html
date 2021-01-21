@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Document title]</title>
-    <meta name="description" content="[A short description of this site for SEO]">
-    <meta name="author" content="[Your Name]">
+    <title>Tokonoma</title>
+    <meta name="description" content="A webstore selling floral arrangements">
+    <meta name="author" content="Olivia Robson">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/Tokonoma.svg">
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="logo">Hello World<!-- Site logo --></a>
+      <a href="index.html" class="logo"><img src="img/Tokonoma.png"></a>
 
       <!-- Navigation menu and toggle button (non-functional) -->
       <button type="button" class="nav-toggle">
@@ -22,9 +23,9 @@
         <ul class="menu">
           <li><a href="#">Shop</a>
             <ul class="submenu">
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Inspiration</a></li>
             </ul>
           </li>
           <li><a href="#">About</a></li>
@@ -49,7 +50,7 @@
 
     <main class="products">
       <header class="heading">
-        <h1>Sale on [Category Name]</h1>
+        <h1>Flowers & Foilage</h1>
       </header>
 
       <!-- Filtering product form -->
@@ -60,50 +61,21 @@
           <fieldset>
             <legend>Colour</legend>
             <ul class="filter-list">
-              <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
+              <li><input type="checkbox" name="colour" value="pink" id="pink"> <label for="black">Pink</label></li>
               <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
+              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey/Green</label></li>
               <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
-              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
+              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue/Purple</label></li>
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Sizes</legend>
+            <legend>Number of Individual Blooms/Stalks</legend>
             <ol class="filter-list">
-              <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">XS</label></li>
-              <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="sm">S</label></li>
-              <li><input type="checkbox" name="size" value="md" id="md"> <label for="md">M</label></li>
-              <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="lg">L</label></li>
-              <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="xl">XL</label></li>
-            </ol>
-          </fieldset>
-          <fieldset>
-            <legend>Ratings (above)</legend>
-            <ol class="filter-list">
-              <li>
-                <input type="radio" name="rating" value="4" id="aboveFour">
-                <label for="aboveFour">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="3" id="aboveThree">
-                <label for="aboveThree">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="2" id="aboveTwo">
-                <label for="aboveTwo">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="1" id="aboveOne">
-                <label for="aboveOne">
-                  <span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
+              <li><input type="checkbox" name="numbermax" value="2" id="2"> <label for="xs">XS</label></li>
+              <li><input type="checkbox" name="numbermax" value="5" id="5"> <label for="sm">S</label></li>
+              <li><input type="checkbox" name="numbermax" value="10" id="10"> <label for="md">M</label></li>
+              <li><input type="checkbox" name="numbermax" value="12" id="12"> <label for="lg">L</label></li>
+              <li><input type="checkbox" name="numbermax" value="16" id="16"> <label for="xl">XL</label></li>
             </ol>
           </fieldset>
         </div>
@@ -123,14 +95,10 @@
         <!-- Product 1 -->
         <article class="product">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-            </dl>
+            <img src="img/rose1.jpg" alt="Rose">
+            <h3>Rose</h3>
+            <data value="2">$2.50/e - $2.00/e</data>
+            <p>Roses symbolize love and romance and come in a variety of colours, they add a classic air to any bouquet and arrangement.</p>
             <a href="#">see more</a>
           </header>
           <form>
@@ -139,15 +107,20 @@
               <ul>
                 <li><label><input type="radio" name="colour" value="r"> Red</label></li>
                 <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                <li><label><input type="radio" name="colour" value="p"> Pink</label></li>
+                <li><label><input type="radio" name="colour" value="y"> Yellow</label></li>
+                <li>Coloured (Extra 50c per bloom)</li>
+                <li><label><input type="radio" name="colour" value="bla"> Black</label></li>
+                <li><label><input type="radio" name="colour" value="blu"> Blue</label></li>
               </ul>
             </fieldset>
             <fieldset>
-              <legend>Sizes</legend>
+              <legend>Bloom Count</legend>
               <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
+                <li><label><input type="radio" name="size" value="5"> 5</label></li>
+                <li><label><input type="radio" name="size" value="10"> 10</label></li>
+                <li><label><input type="radio" name="size" value="12"> 12</label></li>
+                <li><label><input type="radio" name="size" value="16"> 16</label></li>
               </ol>
             </fieldset>
           </form>
@@ -160,31 +133,28 @@
         <!-- Product 2 -->
         <article class="product">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
-            <h3>Product Name</h3>
-            <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-            </dl>
+            <img src="img/lily1.jpg" alt="Lily">
+            <h3>Lily</h3>
+            <data value="4">$4.00/e</data>
+            <p>Lillies are fresh garden flowers, often symbolic of spring and innocence. Add them to bouquets that need pops of colour, or a brighter touch.</p>
             <a href="#">see more</a>
           </header>
           <form>
             <fieldset>
               <legend>Colours</legend>
               <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
                 <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                <li><label><input type="radio" name="colour" value="p"> Pink/coral</label></li>
+                <li><label><input type="radio" name="colour" value="y"> Yellow</label></li>
+                <li>Specialty Colours</li>
+                <li><label><input type="radio" name="colour" value="bla"> Burgundy</label></li>
               </ul>
             </fieldset>
             <fieldset>
               <legend>Sizes</legend>
               <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
+                <li><label><input type="radio" name="size" value="1"> 1</label></li>
+                <li><label><input type="radio" name="size" value="5"> 5</label></li>
               </ol>
             </fieldset>
           </form>
@@ -197,31 +167,28 @@
         <!-- Product 3 -->
         <article class="product">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
+            <img src="img/mum1.jpg" alt="Chrysanthemum">
             <h3>Product Name</h3>
             <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <dl>
-              <dt>Rating</dt>
-              <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-            </dl>
+            <p>Chrysanthemums (also called 'mums' for short) are part of the Chinese Four Gentlemen flowers, along with plum blossoms, orchids, and bamboo; representing the four seasons. Mums represent autumn, and are perfect for fall seasonal arrangements.</p>
             <a href="#">see more</a>
           </header>
           <form>
             <fieldset>
               <legend>Colours</legend>
               <ul>
-                <li><label><input type="radio" name="colour" value="r"> Red</label></li>
+                <li><label><input type="radio" name="colour" value="p"> Pink</label></li>
                 <li><label><input type="radio" name="colour" value="w"> White</label></li>
-                <li><label><input type="radio" name="colour" value="b"> Blue</label></li>
+                <li><label><input type="radio" name="colour" value="y"> Yellow</label></li>
+                <li><label><input type="radio" name="colour" value="r"> Red-Orange</label></li>
               </ul>
             </fieldset>
             <fieldset>
               <legend>Sizes</legend>
               <ol>
-                <li><label><input type="radio" name="size" value="m"> M</label></li>
-                <li><label><input type="radio" name="size" value="l"> L</label></li>
-                <li><label><input type="radio" name="size" value="xl"> XL</label></li>
+                <li><label><input type="radio" name="size" value="1"> 1</label></li>
+                <li><label><input type="radio" name="size" value="5"> 5</label></li>
+                <li><label><input type="radio" name="size" value="10"> 10</label></li>
               </ol>
             </fieldset>
           </form>
@@ -234,8 +201,8 @@
         <!-- Product 4 -->
         <article class="product">
           <header>
-            <img src="img/product.jpg" alt="Product Image">
-            <h3>Product Name</h3>
+            <img src="img/anemone1.jpg" alt="Anemone">
+            <h3>Anemone</h3>
             <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
             <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
             <dl>
