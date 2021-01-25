@@ -23,3 +23,6 @@ Read and complete the steps in the following documents:
 - Content still being worked on.
 - Styles haven't been started.
 - So far no challenges. Had to adjust my GitHub Pages link to display the index.html page.
+- Button styling was fun to try and argue with.
+- Creating custom checkboxes in Photoshop was something I've never tried before, worked well.
+- Typical struggles with little mistakes that I don't notice for an hour like missed semi-colons and unlinked lables.
