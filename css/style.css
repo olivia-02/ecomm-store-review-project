@@ -9,6 +9,7 @@ html {
 	--text-icon-col: #5e4f35;
 	/*end colours*/
 	--pad-and-gap: 1em;
+	box-sizing: border-box;
 }
 body{
 	/*global font*/
@@ -27,9 +28,11 @@ button {
 	border: none;
 	color: var(--primary-col);
 	text-align: center;
+	border-radius: 10px;
 }
 button > .material-icons{
-	color: var(--primary-col)
+	color: var(--primary-vari);
+	padding-top: 0.2em;
 }
 .page-header{
 	display: grid;
@@ -56,9 +59,23 @@ h2 {
 .product {
 	padding: 1em 0px;
 }
-.filter-list{
-/*	display: flex; */
+input.checkboxLotus {
+	display: none;
 }
+input.checkboxLotus + label > span{
+	display: inline-block;
+	width: 1.7em;
+	height: 1em;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background: url('img/uncheckedLotus.jpg'); */
+	background-image: url('/img/uncheckedLotus.png');
+	margin-right: 0.5em;
+}
+input.checkboxLotus:checked + label > span {
+	background-image: url('/img/checkedLotus.png');
+}
+
 .your-products {
 	display: flex;
 	grid-column-start: 3;
@@ -78,7 +95,7 @@ h2 {
 }
 legend {
 	padding-top: var(--pad-and-gap);
-	font-weight: 300;	
+	font-weight: bold;	
 }
 .social, .legal {
 	display: flex;
@@ -223,7 +240,7 @@ legend {
 @media only screen and (min-width: 80em) {
 	.products {
 		display: grid;
-		grid-template-columns: 20em auto auto auto;
+		grid-template-columns: 25em auto auto auto;
 	}
 	.filters {
 		position: sticky;
