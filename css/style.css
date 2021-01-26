@@ -112,6 +112,8 @@ legend {
 .logo {
 	grid-column-start: 1;
 	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 3;
 }
 .logo>img {
 	height: 20vh;
@@ -235,19 +237,28 @@ legend {
 		font-size: 36px;
 		margin-top: 0px;
 	}
+	.filters > h2 {
+		display: block;
+		font-size: 36px;
+		text-align: center;
+	}
 }
 /*Extra large*/
 @media only screen and (min-width: 80em) {
 	.products {
 		display: grid;
-		grid-template-columns: 25em auto auto auto;
+		grid-template-columns: 20em auto auto auto;
+	}
+	.filter-list {
+		grid-column-start: 1;
+		grid-column-end: 3;
 	}
 	.filters {
 		position: sticky;
 		top: 0;
 		margin-bottom: 7em;
 		height: fit-content;
-		font-size: 12px;
+		font-size: 16px;
 	}
 	.heading {
 		grid-column-start: 1;
@@ -260,5 +271,9 @@ legend {
 	.subheading {
 		grid-column-start: 1;
 		grid-column-end: 4;
+	}
+	.filter-options{
+		display: block;
+		justify-content: space-between;
 	}
 }
