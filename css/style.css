@@ -69,11 +69,11 @@ input.checkboxLotus + label > span{
 	background-repeat: no-repeat;
 	background-size: cover;
 	/* background: url('img/uncheckedLotus.jpg'); */
-	background-image: url('/img/uncheckedLotus.png');
+	background-image: url('../img/uncheckedLotus.png');
 	margin-right: 0.5em;
 }
 input.checkboxLotus:checked + label > span {
-	background-image: url('/img/checkedLotus.png');
+	background-image: url('../img/checkedLotus.png');
 }
 
 .your-products {
